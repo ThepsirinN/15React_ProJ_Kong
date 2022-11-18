@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;
+    font-weight: 400;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+}
+
+.App h1{
+    font-size: 3.2rem;
+}
+
+
+
+.menu,.quiz,.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #33cdf8;
+    width: 50rem;
+    height: 50rem;
+    border-radius: .8rem;
+}
+
+.menu button,.score button{
+    border: none;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    color: #333;
+    border-radius: .8rem;
+    font-size: 2.4rem;
+    width: 30%;
+    padding: .8rem;
+    transition: background-color .6s, color .6s;
+}
+
+.menu button:hover,.score button:hover{
+    transition: background-color .6s, color .6s;
+    color: #fff;
+    background-color: orange;
+}
+
+.quiz{
+    justify-content:flex-start;
+}
+
+.choice{
+
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .8rem;
+}
+
+.choice button{
+    align-items: center;
+    row-gap: .8rem;
+    border: none;
+    cursor: pointer;
+    background-color: burlywood;
+    color: #333;
+    border-radius: .8rem;
+    font-size: 2.4rem;
+    width: 40%;
+    padding: .8rem;
+    transition: background-color .6s, color .6s;
+}
+
+.choice button:hover{
+    transition: background-color .6s, color .6s;
+    color: #111111;
+    background-color: rgb(193, 167, 167);
+}
+
+.quiz p{
+    position: fixed;
+    bottom: 15rem;
+    font-size: 1.8rem;
+}
+
+.score h2{
+    font-size: 1.8rem;
+}
